@@ -71,12 +71,15 @@ public class HomePage extends BaseTest {
 	public void selectCountry(String CountryName) throws InterruptedException {
 		Thread.sleep(3000);
 		web.clickOnElement(countryButton);
+		logger.info("Click on Country Selection button");
 		if (CountryName.equalsIgnoreCase("Saudiarabia")) {
 			web.clickOnElement(countrySaudiarabia);
 		} else if (CountryName.equalsIgnoreCase("Kuwait"))
 			web.clickOnElement(countryKuwait);
 		else if (CountryName.equalsIgnoreCase("Baharin"))
 			web.clickOnElement(countryBaharin);
+		
+		logger.info("Choosen on Country "+CountryName);
 	}
 
 	/**
@@ -94,9 +97,10 @@ public class HomePage extends BaseTest {
 			return verifyPlan(PlanType);
 		else if (CountryName.equalsIgnoreCase("Baharin"))
 			return verifyPlan(PlanType);
-		
+		logger.info("Verified Plan Type for the Country ");
 		return false;
 
+		
 	}
 
 	/**
@@ -114,7 +118,7 @@ public class HomePage extends BaseTest {
 			return verifyPlanAndPrice(PlanType, Price);
 		else if (CountryName.equalsIgnoreCase("Baharin"))
 			return verifyPlanAndPrice(PlanType, Price);
-
+		logger.info("Verified Price and Plan Type for the Country ");
 		return false;
 	}
 
@@ -152,6 +156,7 @@ public class HomePage extends BaseTest {
 		else if (PlanType.equalsIgnoreCase(web.getWebElementText(planPremiumTextLabel))
 				&& Price.equalsIgnoreCase(web.getWebElementText(pricePremiumPlan)))
 			return true;
+		logger.info("Verified Currency for the Country ");
 		return false;
 	}
 

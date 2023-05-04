@@ -18,7 +18,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class PlanValidationTest extends BaseTest{
 	public static WebDriver driver;
-	private static final Logger logger = Logger.getLogger(BaseTest.class.getName());
+	
 	SoftAssert softAssert = new SoftAssert();
 
 	/**
@@ -57,9 +57,9 @@ public class PlanValidationTest extends BaseTest{
 	 
 	 @BeforeClass
 	 public void setUp() {
-		 WebDriverManager.chromedriver().setup();
+		 	WebDriverManager.chromedriver().setup();
 			driver = new ChromeDriver();
-			logger.info("Chrome Drive Launched");
+			logger.info("Chrome Browser Launched");
 			driver.manage().window().maximize();
 			driver.get(baseUrl);
 			logger.info("Successfully navigated to website.");
@@ -68,6 +68,7 @@ public class PlanValidationTest extends BaseTest{
 	
 	@AfterClass
 	public void closeBrowser() {
+		logger.info("Browser Closed");
 		driver.quit();
 	}
 	 
