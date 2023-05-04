@@ -2,22 +2,22 @@
 <testng-results skipped="0" failed="0" ignored="1" total="4" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="22701" started-at="2023-05-04T16:23:57 IST" finished-at="2023-05-04T16:24:19 IST">
+  <suite name="Suite" duration-ms="26070" started-at="2023-05-04T17:18:30 IST" finished-at="2023-05-04T17:18:56 IST">
     <groups>
     </groups>
-    <test name="Test" duration-ms="22701" started-at="2023-05-04T16:23:57 IST" finished-at="2023-05-04T16:24:19 IST">
+    <test name="Test" duration-ms="26070" started-at="2023-05-04T17:18:30 IST" finished-at="2023-05-04T17:18:56 IST">
       <class name="pageObjects.BaseTest">
-        <test-method status="PASS" signature="readProperties()[pri:0, instance:pageObjects.BaseTest@306279ee]" name="readProperties" is-config="true" duration-ms="5" started-at="2023-05-04T16:23:57 IST" finished-at="2023-05-04T16:23:57 IST">
+        <test-method status="PASS" signature="readProperties()[pri:0, instance:pageObjects.BaseTest@306279ee]" name="readProperties" is-config="true" duration-ms="4" started-at="2023-05-04T17:18:30 IST" finished-at="2023-05-04T17:18:30 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- readProperties -->
       </class> <!-- pageObjects.BaseTest -->
       <class name="subscription.PlanValidationTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:subscription.PlanValidationTest@5204062d]" name="setUp" is-config="true" duration-ms="6200" started-at="2023-05-04T16:23:57 IST" finished-at="2023-05-04T16:24:03 IST">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:subscription.PlanValidationTest@5fdba6f9]" name="setUp" is-config="true" duration-ms="7263" started-at="2023-05-04T17:18:30 IST" finished-at="2023-05-04T17:18:37 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="validatePlanPriceCurrencyForCountry(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:subscription.PlanValidationTest@5204062d]" name="validatePlanPriceCurrencyForCountry" duration-ms="5534" started-at="2023-05-04T16:24:03 IST" data-provider="excelData" finished-at="2023-05-04T16:24:09 IST">
+        <test-method status="PASS" signature="validatePlanPriceCurrencyForCountry(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:subscription.PlanValidationTest@5fdba6f9]" name="validatePlanPriceCurrencyForCountry" duration-ms="5712" started-at="2023-05-04T17:18:38 IST" data-provider="excelData" finished-at="2023-05-04T17:18:44 IST">
           <params>
             <param index="0">
               <value>
@@ -43,7 +43,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validatePlanPriceCurrencyForCountry -->
-        <test-method status="PASS" signature="validatePlanPriceCurrencyForCountry(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:subscription.PlanValidationTest@5204062d]" name="validatePlanPriceCurrencyForCountry" duration-ms="5290" started-at="2023-05-04T16:24:09 IST" data-provider="excelData" finished-at="2023-05-04T16:24:14 IST">
+        <test-method status="PASS" signature="validatePlanPriceCurrencyForCountry(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:subscription.PlanValidationTest@5fdba6f9]" name="validatePlanPriceCurrencyForCountry" duration-ms="5666" started-at="2023-05-04T17:18:44 IST" data-provider="excelData" finished-at="2023-05-04T17:18:49 IST">
           <params>
             <param index="0">
               <value>
@@ -69,7 +69,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validatePlanPriceCurrencyForCountry -->
-        <test-method status="PASS" signature="validatePlanPriceCurrencyForCountry(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:subscription.PlanValidationTest@5204062d]" name="validatePlanPriceCurrencyForCountry" duration-ms="4606" started-at="2023-05-04T16:24:14 IST" data-provider="excelData" finished-at="2023-05-04T16:24:19 IST">
+        <test-method status="PASS" signature="validatePlanPriceCurrencyForCountry(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:subscription.PlanValidationTest@5fdba6f9]" name="validatePlanPriceCurrencyForCountry" duration-ms="6007" started-at="2023-05-04T17:18:49 IST" data-provider="excelData" finished-at="2023-05-04T17:18:55 IST">
           <params>
             <param index="0">
               <value>
@@ -95,7 +95,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validatePlanPriceCurrencyForCountry -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:subscription.PlanValidationTest@5204062d]" name="closeBrowser" is-config="true" duration-ms="621" started-at="2023-05-04T16:24:19 IST" finished-at="2023-05-04T16:24:19 IST">
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:subscription.PlanValidationTest@5fdba6f9]" name="closeBrowser" is-config="true" duration-ms="679" started-at="2023-05-04T17:18:55 IST" finished-at="2023-05-04T17:18:56 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->

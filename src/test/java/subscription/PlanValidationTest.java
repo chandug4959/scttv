@@ -1,6 +1,8 @@
 package subscription;
 
 import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
+
 import common.ExcelDataProvider;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import java.io.IOException;
@@ -17,6 +19,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class PlanValidationTest extends BaseTest{
 	public static WebDriver driver;
 	private static final Logger logger = Logger.getLogger(BaseTest.class.getName());
+	SoftAssert softAssert = new SoftAssert();
 
 	/**
 	 * validate PlanPrice Currency For All Countries 
@@ -32,12 +35,16 @@ public class PlanValidationTest extends BaseTest{
 		
 		HomePage homepage=new HomePage(driver);
 		homepage.selectCountry(countryName);
-		System.out.println(homepage.verifyPlanType(countryName,planType));
-		System.out.println(homepage.verifyPlanAndPrice(planType, price));
-		System.out.println(homepage.verifyCurrencyandCountry(countryName, currency));
-		logger.info("Successfully navigated to website.");
+		softAssert.assertEquals(homepage.verifyPlanType(countryName,planType), true, "Validated Plan Type for "+countryName+" , Plan "+planType);
+		//homepage.verifyPlanType(countryName,planType);
+		softAssert.assertEquals(homepage.verifyPriceOfPlan(countryName, planType, price), true, "Validated Price and Plan Type for "+countryName+" , Plan "+planType+ " Price "+price);
+		//homepage.verifyPriceOfPlan(countryName, planType, price);
+		//homepage.verifyPlanAndPrice(planType, price);
+		softAssert.assertEquals(homepage.verifyCurrencyandCountry(countryName, currency), true, "Validated Currency for "+countryName+" , Currency"+currency);
+		softAssert.assertAll();
+		//homepage.verifyCurrencyandCountry(countryName, currency);
+		logger.info("Validated All Cases");
 	}
-	
 	
 	
 	 @DataProvider(name = "excelData")
