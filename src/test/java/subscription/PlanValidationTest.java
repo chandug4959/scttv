@@ -18,7 +18,6 @@ public class PlanValidationTest extends BaseTest{
 	public static WebDriver driver;
 	private static final Logger logger = Logger.getLogger(BaseTest.class.getName());
 
-	//public String baseUrl = "https://subscribe.stctv.com/sa-en?";
 	/**
 	 * validate PlanPrice Currency For All Countries 
 	 * @param countryName
@@ -44,9 +43,7 @@ public class PlanValidationTest extends BaseTest{
 	 @DataProvider(name = "excelData")
 	    public Object[][] excelDataProvider() throws IOException {
 	 
-	        // We are creating an object from the excel sheet data by calling a method that
-	        // reads data from the excel stored locally in our system
-	        Object[][] arrObj = new ExcelDataProvider().getExcelData(
+	       Object[][] arrObj = new ExcelDataProvider().getExcelData(
 	        		"src/test/resources/testdata.xlsx","Sheet1");
 	        return arrObj;
 	}
