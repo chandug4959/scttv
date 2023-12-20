@@ -4,14 +4,14 @@ import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
 import common.ExcelDataProvider;
-import io.github.bonigarcia.wdm.WebDriverManager;
+import pageObjects.BaseTest;
+import pageObjects.HomePage;
+
 import java.io.IOException;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.DataProvider;
-import java.util.logging.Logger;
-import pageObjects.BaseTest;
-import pageObjects.HomePage;
+
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -57,7 +57,7 @@ public class PlanValidationTest extends BaseTest{
 	 
 	 @BeforeClass
 	 public void setUp() {
-		 	WebDriverManager.chromedriver().setup();
+		 	//WebDriverManager.chromedriver().setup();
 			driver = new ChromeDriver();
 			logger.info("Chrome Browser Launched");
 			driver.manage().window().maximize();

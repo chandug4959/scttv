@@ -1,8 +1,7 @@
 package common;
 
 import org.apache.poi.ss.usermodel.Cell;
-import org.testng.annotations.DataProvider;
- 
+import org.testng.annotations.DataProvider; 
 import java.io.FileInputStream;
 import java.io.IOException;
  
@@ -11,8 +10,6 @@ import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
  
 public class ExcelDataProvider {
- 
-   
  
     // This method handles the excel - opens it and reads the data from the
     // respective cells using a for-loop & returns it in the form of a string array
